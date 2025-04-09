@@ -15,22 +15,22 @@ const Header = () => {
       <div className={styles.topLine}>
         <div className={styles.logoContainer}>
           <h1 className={styles.logo}>LOGO</h1>
-          <span>
-            <img src="/search-normal.png"/>
-            <img src="/heart.png"/></span>
+          
+          
+            
         </div>
         <div className={styles.iconGroup}>
           <button aria-label="Search" className={styles.icon}>
-            <i className="tiTiSearch" />
+          <img src="/search-normal.png"/>
           </button>
           <button aria-label="Favorites" className={styles.icon}>
-            <i className="tiTiHeart" />
+          <img src="/heart.png"/>
           </button>
           <button aria-label="Account" className={styles.icon}>
-            <i className="tiTiUser" />
+          <img src="/user.svg"/>
           </button>
           <button aria-label="Cart" className={styles.icon}>
-            <i className="tiTiShoppingCart" />
+          <img src="/shopping-bag.svg"/>
           </button>
         </div>
       </div>
