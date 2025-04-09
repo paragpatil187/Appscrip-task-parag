@@ -1,0 +1,67 @@
+.productSection {
+    padding: 40px;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .description {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .contentContainer {
+    gap: 30px;
+    display: flex;
+  }
+  
+  /* Filter Toggle Button (Mobile Only) */
+  .filterToggle {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filterToggle:hover {
+    background-color: #efefef;
+  }
+  
+  .filterArrow {
+    transition: transform 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .filterArrow.open {
+    transform: rotate(180deg);
+  }
+  
+  @media (max-width: 640px) {
+    .productSection {
+      padding: 20px;
+    }
+  
+    .filterToggle {
+      display: flex;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  
+    .contentContainer {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Inter, sans-serif;
+}
+
+@media (width<=991px) {
+  .container {
+    max-width: 991px;
+  }
+}
+
+@media (width<=640px) {
+  .container {
+    max-width: 640px;
+  }
+}

@@ -1,0 +1,213 @@
+.footer {
+    color: #fff;
+    background-color: #000;
+    padding: 40px;
+  }
+  
+  .topSection {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    display: flex;
+  }
+  
+  @media (width<=640px) {
+    .topSection {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  .newsletterTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .subscriptionForm {
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .emailInput {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  @media (width<=640px) {
+    .subscriptionForm {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .emailInput {
+      width: 100%;
+    }
+  
+    .subscribeButton {
+      align-self: flex-start;
+    }
+  }
+  
+  .subscribeButton {
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .subscribeButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .bottomSection {
+    border-top: 1px solid #333;
+    padding-top: 40px;
+  }
+  
+  .linksContainer {
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  @media (width<=640px) {
+    .linksContainer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer {
+      padding: 30px 20px;
+    }
+  }
+  
+  /* Collapsible Section Styles */
+  .collapsibleSection {
+    margin-bottom: 30px;
+  }
+  
+  .sectionToggle {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .sectionTitle {
+    margin-bottom: 15px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .toggleArrow {
+    display: none;
+    transition: transform 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .toggleArrow.expanded {
+    transform: rotate(180deg);
+  }
+  
+  .sectionContent {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  /* Link List Styles */
+  .linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkItem {
+    color: #666;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+  }
+  
+  .linkItem:hover {
+    color: #fff;
+  }
+  
+  .socialIcons {
+    gap: 15px;
+    display: flex;
+  }
+  
+  .socialIcons a {
+    color: #666;
+    font-size: 20px;
+    transition: color 0.2s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: #fff;
+  }
+  
+  .paymentIcons {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .paymentIcons img {
+    border-radius: 3px;
+    transition: transform 0.2s ease;
+  }
+  
+  .paymentIcons img:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Mobile Styles for Collapsible Sections */
+  @media (width<=640px) {
+    .toggleArrow {
+      display: block;
+    }
+  
+    .sectionContent {
+      max-height: 0;
+      overflow: hidden;
+      transition:
+        max-height 0.3s ease,
+        margin-top 0.3s ease;
+      margin-top: 0;
+    }
+  
+    .sectionContent.expanded {
+      max-height: 300px;
+      margin-top: 15px;
+    }
+  
+    .sectionTitle {
+      margin-bottom: 0;
+    }
+  
+    .collapsibleSection {
+      border-bottom: 1px solid #333;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .collapsibleSection:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  
+    .sectionToggle {
+      padding: 10px 0;
+    }
+  }
+  
